@@ -10,6 +10,10 @@
 		CFE090EF1EB35AD400E9FDAD /* EventHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE090E51EB35AD400E9FDAD /* EventHub.framework */; };
 		CFE090F41EB35AD400E9FDAD /* EventHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE090F31EB35AD400E9FDAD /* EventHubTests.swift */; };
 		CFE090F61EB35AD400E9FDAD /* EventHub.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE090E81EB35AD400E9FDAD /* EventHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE091031EB35B1500E9FDAD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE090FF1EB35B1500E9FDAD /* Event.swift */; };
+		CFE091041EB35B1500E9FDAD /* EventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091001EB35B1500E9FDAD /* EventHub.swift */; };
+		CFE091051EB35B1500E9FDAD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091011EB35B1500E9FDAD /* Events.swift */; };
+		CFE091061EB35B1500E9FDAD /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091021EB35B1500E9FDAD /* Hub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		CFE090EE1EB35AD400E9FDAD /* EventHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE090F31EB35AD400E9FDAD /* EventHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHubTests.swift; sourceTree = "<group>"; };
 		CFE090F51EB35AD400E9FDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE090FF1EB35B1500E9FDAD /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CFE091001EB35B1500E9FDAD /* EventHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHub.swift; sourceTree = "<group>"; };
+		CFE091011EB35B1500E9FDAD /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		CFE091021EB35B1500E9FDAD /* Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		CFE090E71EB35AD400E9FDAD /* EventHub */ = {
 			isa = PBXGroup;
 			children = (
+				CFE090FF1EB35B1500E9FDAD /* Event.swift */,
+				CFE091001EB35B1500E9FDAD /* EventHub.swift */,
+				CFE091011EB35B1500E9FDAD /* Events.swift */,
+				CFE091021EB35B1500E9FDAD /* Hub.swift */,
 				CFE090E81EB35AD400E9FDAD /* EventHub.h */,
 				CFE090E91EB35AD400E9FDAD /* Info.plist */,
 			);
@@ -149,6 +161,7 @@
 					CFE090E41EB35AD400E9FDAD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4LQ43Y6TLH;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CFE090ED1EB35AD400E9FDAD = {
@@ -198,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE091051EB35B1500E9FDAD /* Events.swift in Sources */,
+				CFE091041EB35B1500E9FDAD /* EventHub.swift in Sources */,
+				CFE091031EB35B1500E9FDAD /* Event.swift in Sources */,
+				CFE091061EB35B1500E9FDAD /* Hub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +339,7 @@
 		CFE090FA1EB35AD400E9FDAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
@@ -334,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wassimseifeddine.EventHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +360,7 @@
 		CFE090FB1EB35AD400E9FDAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
@@ -360,6 +380,7 @@
 		CFE090FD1EB35AD400E9FDAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
 				INFOPLIST_FILE = EventHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +393,7 @@
 		CFE090FE1EB35AD400E9FDAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4LQ43Y6TLH;
 				INFOPLIST_FILE = EventHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
