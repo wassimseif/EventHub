@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "00A0427A16C8142CACE92EAD49A7880AF5026F3B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "00A0427A16C8142CACE92EAD49A7880AF5026F3B" : 9223372036854775807,
+    "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7D0AF2C8-A24E-4FD8-94EE-7219DF3A9FD5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "00A0427A16C8142CACE92EAD49A7880AF5026F3B" : "EventHub\/",
+    "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EventHub",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EventHub.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wassimseif\/EventHub.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00A0427A16C8142CACE92EAD49A7880AF5026F3B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wassimseif\/Tech-Stack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76"
+    }
+  ]
+}
