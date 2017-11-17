@@ -56,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFC726D71FBEBD360039251B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CFE090FF1EB35B1500E9FDAD /* Event.swift */,
+				CFE091011EB35B1500E9FDAD /* EventType.swift */,
+				CFE091021EB35B1500E9FDAD /* Hub.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		CFE090DB1EB35AD400E9FDAD = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +87,7 @@
 		CFE090E71EB35AD400E9FDAD /* EventHub */ = {
 			isa = PBXGroup;
 			children = (
-				CFE090FF1EB35B1500E9FDAD /* Event.swift */,
-				CFE091011EB35B1500E9FDAD /* EventType.swift */,
-				CFE091021EB35B1500E9FDAD /* Hub.swift */,
+				CFC726D71FBEBD360039251B /* Source */,
 				CFE090E81EB35AD400E9FDAD /* EventHub.h */,
 				CFE090E91EB35AD400E9FDAD /* Info.plist */,
 			);
