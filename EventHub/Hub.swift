@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 public class Hub {
+    
     public struct Observer {
         fileprivate let center: NotificationCenter
         fileprivate var observer: Any?
@@ -29,16 +31,16 @@ public class Hub {
      so this reimplementation of `observe` allows us to broadcasts events of type T?.
      */
     @discardableResult
-    public func observe<T>(_ event: Event<T?>, callback: @escaping (T?) -> ()) -> Observer {
-        return observe(event.getName()) { callback($0 as? T) }
+    public func listen<T>(_ event: Event<T?>, callback: @escaping (T?) -> ()) -> Observer {
+        return listen(event.name) { callback($0 as? T) }
     }
     
     @discardableResult
-    public func observe<T>(_ event: Event<T>, callback: @escaping (T) -> ()) -> Observer {
-        return observe(event.getName()) { callback($0 as! T) }
+    public func listen<T>(_ event: Event<T>, callback: @escaping (T) -> ()) -> Observer {
+        return listen(event.name) { callback($0 as! T) }
     }
     
-    public func observe(_ name: Foundation.Notification.Name, block: @escaping (Any?) -> ()) -> Observer {
+    private  func listen(_ name: Foundation.Notification.Name, block: @escaping (Any?) -> ()) -> Observer {
         let observer = notificationCenter.addObserver(forName: name, object: nil, queue: nil) { notification in
             block(notification.object)
         }
@@ -49,11 +51,12 @@ public class Hub {
         )
     }
     
-    public func post<T>(_ event: Event<T>, _ object: T) {
-        notificationCenter.post(name: event.getName(), object: object)
+    public func notifyObservers<T>(toEvent event: Event<T>, _ object: T) {
+        notificationCenter.post(name: event.name, object: object)
     }
     
-    public func post<T>(_ event: Event<T?>, _ object: T?) {
-        notificationCenter.post(name: event.getName(), object: object)
+    public func notifyObservers<T>(toEvent event: Event<T?>, _ object: T?) {
+        notificationCenter.post(name: event.name, object: object)
     }
 }
+

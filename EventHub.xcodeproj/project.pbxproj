@@ -11,8 +11,7 @@
 		CFE090F41EB35AD400E9FDAD /* EventHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE090F31EB35AD400E9FDAD /* EventHubTests.swift */; };
 		CFE090F61EB35AD400E9FDAD /* EventHub.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE090E81EB35AD400E9FDAD /* EventHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFE091031EB35B1500E9FDAD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE090FF1EB35B1500E9FDAD /* Event.swift */; };
-		CFE091041EB35B1500E9FDAD /* EventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091001EB35B1500E9FDAD /* EventHub.swift */; };
-		CFE091051EB35B1500E9FDAD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091011EB35B1500E9FDAD /* Events.swift */; };
+		CFE091051EB35B1500E9FDAD /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091011EB35B1500E9FDAD /* EventType.swift */; };
 		CFE091061EB35B1500E9FDAD /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE091021EB35B1500E9FDAD /* Hub.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +33,7 @@
 		CFE090F31EB35AD400E9FDAD /* EventHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHubTests.swift; sourceTree = "<group>"; };
 		CFE090F51EB35AD400E9FDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE090FF1EB35B1500E9FDAD /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		CFE091001EB35B1500E9FDAD /* EventHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHub.swift; sourceTree = "<group>"; };
-		CFE091011EB35B1500E9FDAD /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		CFE091011EB35B1500E9FDAD /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		CFE091021EB35B1500E9FDAD /* Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE090FF1EB35B1500E9FDAD /* Event.swift */,
-				CFE091001EB35B1500E9FDAD /* EventHub.swift */,
-				CFE091011EB35B1500E9FDAD /* Events.swift */,
+				CFE091011EB35B1500E9FDAD /* EventType.swift */,
 				CFE091021EB35B1500E9FDAD /* Hub.swift */,
 				CFE090E81EB35AD400E9FDAD /* EventHub.h */,
 				CFE090E91EB35AD400E9FDAD /* Info.plist */,
@@ -211,8 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE091051EB35B1500E9FDAD /* Events.swift in Sources */,
-				CFE091041EB35B1500E9FDAD /* EventHub.swift in Sources */,
+				CFE091051EB35B1500E9FDAD /* EventType.swift in Sources */,
 				CFE091031EB35B1500E9FDAD /* Event.swift in Sources */,
 				CFE091061EB35B1500E9FDAD /* Hub.swift in Sources */,
 			);
@@ -422,6 +418,7 @@
 				CFE090FB1EB35AD400E9FDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFE090FC1EB35AD400E9FDAD /* Build configuration list for PBXNativeTarget "EventHubTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +427,7 @@
 				CFE090FE1EB35AD400E9FDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

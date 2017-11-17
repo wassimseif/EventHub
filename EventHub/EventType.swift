@@ -7,4 +7,4 @@
 //
 
 import Foundation
-public class Events {}
+public protocol EventType {}

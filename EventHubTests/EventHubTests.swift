@@ -11,9 +11,21 @@ import XCTest
 
 class EventHubTests: XCTestCase {
     
+    struct userEvents {
+        static let didLogin = Event<String>(withName: "didLogin")
+    }
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let sharedHub = Hub()
+        var observer = sharedHub.listen(userEvents.didLogin) { (username) in
+            XCTAssert(username == "wassimseif")
+            print(username)
+        }
+        sharedHub.notifyObservers(toEvent: userEvents.didLogin, "wassimseif")
+        
+        observer.remove()
+        
+        sharedHub.notifyObservers(toEvent: userEvents.didLogin, "shouldNotBeObseved")
     }
     
     override func tearDown() {

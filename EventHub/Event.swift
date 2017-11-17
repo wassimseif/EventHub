@@ -7,13 +7,16 @@
 //
 
 import Foundation
-public class Event<T>: Events {
-    fileprivate let name: Foundation.Notification.Name
+
+public class Event<T>: EventType {
     
-    func getName() -> Foundation.Notification.Name {
+    fileprivate let _name: Foundation.Notification.Name
+    
+    var name : Foundation.Notification.Name {
         return self.name
     }
-    public init(_ name: String) {
-        self.name = Foundation.Notification.Name(name)
+    
+    public init(withName name: String) {
+        self._name = Foundation.Notification.Name(name)
     }
 }
