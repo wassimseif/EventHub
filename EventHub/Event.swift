@@ -10,13 +10,10 @@ import Foundation
 
 public class Event<T>: EventType {
     
-    fileprivate let _name: Foundation.Notification.Name
+     let name: Foundation.Notification.Name
     
-    var name : Foundation.Notification.Name {
-        return self.name
-    }
-    
+  
     public init(withName name: String) {
-        self._name = Foundation.Notification.Name(name)
+        self.name = Foundation.Notification.Name(name)
     }
 }
